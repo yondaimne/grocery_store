@@ -1,0 +1,69 @@
+<html>
+   <head>
+     <link rel="stylesheet" href="style7.css"> 
+   </head>
+   <body>
+ <form name="converter" class="sign-up-form">
+           <h1>ENTER CURRENCY VALUE:</h1>   
+<table border="0">
+<tr>
+<td>Euro: </td><td><input type="text"  class="input-box" name="euro" onChange="euroConverter()"  placeholder="Enter EURO Value"/></td>
+</tr>
+<tr>
+<td>US Dollar: </td><td><input type="text"  class="input-box" name="dollar" onChange="dollarConverter()"
+ placeholder="Enter Dollar Value"/></td>
+</tr>
+<tr>
+<td>British Pound:</td><td><input type="text" class="input-box" name="pound" onChange="poundConverter()"
+placeholder="Enter POUND Value"/></td>
+</tr>
+<tr>
+<td>Japanese Yen: </td><td><input type="text"  class="input-box" name="yen" onChange="yenConverter()" 
+placeholder="Enter YEN Value"/></td>
+</tr>
+ <tr>
+<td>Indian Rupee: </td><td><input type="text"  class="input-box"name="inr" onChange="inrConverter()" 
+placeholder="Enter RUPEE Value"/></td>
+</tr>   
+<tr>
+<td colspan="2" align="center"><input type="button"  class="input-box" value="Convert!" /></td>
+</tr>
+</table>
+</form>
+     
+       <script language="JavaScript">
+<!--
+function euroConverter(){
+document.converter.dollar.value = document.converter.euro.value * 1.470
+document.converter.pound.value = document.converter.euro.value * 0.717
+document.converter.yen.value = document.converter.euro.value * 165.192
+document.converter.inr.value = document.converter.euro.value * 74.97   
+}
+function dollarConverter(){
+document.converter.euro.value = document.converter.dollar.value * 0.680
+document.converter.pound.value = document.converter.dollar.value * 0.488
+document.converter.yen.value = document.converter.dollar.value * 112.36
+document.converter.inr.value = document.converter.dollar.value * 74.97   
+}
+function poundConverter(){
+document.converter.dollar.value = document.converter.pound.value * 2.049
+document.converter.euro.value = document.converter.pound.value * 1.394
+document.converter.yen.value = document.converter.pound.value * 230.27
+document.converter.inr.value = document.converter.pound.value * 74.97   
+}
+function yenConverter(){
+document.converter.dollar.value = document.converter.yen.value * 0.0089
+document.converter.pound.value = document.converter.yen.value * 0.00434
+document.converter.euro.value = document.converter.yen.value * 0.00605
+document.converter.inr.value = document.converter.yen.value * 74.97   
+}
+function inrConverter(){
+document.converter.dollar.value = document.converter.inr.value * 0.0089
+document.converter.pound.value = document.converter.inr.value * 0.00434
+document.converter.euro.value = document.converter.inr.value * 0.00605
+document.converter.inr.value = document.converter.inr.value * 74.97  
+}         
+//-->
+</script>
+   </body>
+</html>
